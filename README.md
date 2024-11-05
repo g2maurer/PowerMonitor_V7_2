@@ -25,8 +25,19 @@
 ## Images:
 * Image files for PCB and enclosure.
 
-## KiCAD:
-* PCB design files.
+## PCB:
+* KiCAD
+	* PCB design files.
+* PCB Components:
+	* ESP32-WROOM-32S.
+	* 3.5 inch TFT with Touch. 
+		* SPI interface.
+	* ADS1015 Analog to Digital converter ICs. 
+		* Configured in differntail mode, two CT channels per A2D converter IC.
+	* CH340K USB to serial inteface IC.
+		* microUSB interface (USB-B).
+	* RV3028__C7 Realtime Clock IC and battery. 
+		* Not required if WiFi connected to get the time via NTP.
 
 ## Misc:
 * TFT user setup file. 
@@ -34,14 +45,5 @@
 	* The TFT_eSPI "User_Setup_Select.h" file selects the User_Setup file. 
 	* Use ILI9488_g2m.h file found in Misc directory for User_Setup file.
 	
-## PCB Components:
-* ESP32-WROOM-32S.
-* 3.5 inch TFT with Touch. 
-	* SPI interface.
-* ADS1015 Analog to Digital converter ICs. 
-	* Configured in differntail mode, two CT channels per A2D converter IC.
-* CH340K USB to serial inteface IC.
-	* microUSB interface (USB-B).
-* RV3028__C7 Realtime Clock IC and battery. 
-	* Not required if WiFi connected to get the time via NTP.
+
 
